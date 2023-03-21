@@ -1,4 +1,7 @@
 
+// run as - 
+// npm start 
+// view output on browser - 
 // http://localhost:3000/
 
 const express = require('express');
