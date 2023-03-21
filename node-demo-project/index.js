@@ -8,14 +8,31 @@
 
 const express = require('express');
 const app = express();
+const portNumber = 8000;
 
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
+    console.log('Hello');
     res.send('Hello World');
 });
 
-app.listen(3000);
+app.listen(portNumber, () => {
+    // starting code 
+    console.log(`Open http://localhost:${portNumber}/ on your browser to view the app`);
+});
 
 
+
+
+
+
+// const express = require('express');
+// const app = express();
+
+// app.get('/', function (req, res) {
+//     res.send('Hello World');
+// });
+
+// app.listen(3000);
 
 
 // // core java
