@@ -32,6 +32,11 @@ app.get('/contact', (req, res) => {
     res.send('Please visit out office.');
 });
 
+app.get('/*', (req, res) => {
+    console.log('Page404');
+    res.send('Page not found!');
+});
+
 app.listen(portNumber, () => {
     // starting code 
     console.log(`Open http://localhost:${portNumber}/ on your browser to view the app.`);
