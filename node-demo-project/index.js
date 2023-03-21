@@ -3,6 +3,8 @@
 // npm start 
 // view output on browser - 
 // http://localhost:3000/
+// to stop - 
+// Ctrl + C  enter Y 
 
 const express = require('express');
 const app = express();
