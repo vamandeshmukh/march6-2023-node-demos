@@ -10,14 +10,31 @@ const express = require('express');
 const app = express();
 const portNumber = 8000;
 
+// syntax 
+// app.get(arg, arg2);
+// app.get(url, () => {});
+// app.get(url, (request, response) => {});
+
+// home, about, contact, ... 
+
 app.get('/', (req, res) => {
-    console.log('Hello');
-    res.send('Hello World');
+    console.log('Home');
+    res.send('Hello World!');
+});
+
+app.get('/about', (req, res) => {
+    console.log('About');
+    res.send('Deloitte is a good company!');
+});
+
+app.get('/contact', (req, res) => {
+    console.log('Contact');
+    res.send('Please visit out office.');
 });
 
 app.listen(portNumber, () => {
     // starting code 
-    console.log(`Open http://localhost:${portNumber}/ on your browser to view the app`);
+    console.log(`Open http://localhost:${portNumber}/ on your browser to view the app.`);
 });
 
 
